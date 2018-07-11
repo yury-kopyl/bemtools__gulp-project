@@ -1,0 +1,18 @@
+@import "vars";
+
+.btn_shadow {
+	box-shadow: $box-shadow;
+
+	&:hover {
+		box-shadow: none;
+	}
+
+	&:active {
+		box-shadow: none;
+	}
+
+	&:disabled,
+	&.btn_disabled {
+		box-shadow: none;
+	}
+}

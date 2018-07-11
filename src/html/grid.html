@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Buttons</title>
+	<link rel="stylesheet" href="../css/grid.css">
+	<style>
+		.example .grid__col {
+			background-color: #f1f4f5;
+			background-clip: content-box;
+			border: 1px solid #b1b6b7;
+			padding: 15px;
+		}
+
+		xmp {
+			padding: 15px;
+			background-color: #cfcfcf;
+			display: inline-block;
+		}
+	</style>
+</head>
+<body class="page">
+	<header class="page__header header">
+		<object data="nav.html" type="text/html" height="36" width="100%"></object>
+	</header>
+	<section class="page__content content">
+		<h1>Equal-width</h1>
+		<p>For example, here are two grid layouts that apply to every device and viewport, from xs to xl. Add any number of unit-less classes for each breakpoint you need and every column will be the same width.</p>
+		<div class="grid example">
+			<div class="grid__col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore, pariatur.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. In incidunt laudantium minima, quas sed temporibus!</div>
+		</div>
+		<xmp><div class="grid">
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+</div></xmp>
+		<div class="grid example">
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col">Lorem ipsum dolor sit amet.</div>
+		</div>
+		<xmp><div class="grid">
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+	<div class="grid__col">...</div>
+</div></xmp>
+		<p>Equal-width columns can be broken into multiple lines.</p>
+		<div class="grid example">
+			<div class="grid__col grid__col_3">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col grid__col_3">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col grid__col_3">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col grid__col_3">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__delimiter"></div>
+			<div class="grid__col grid__col_4">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col grid__col_4">Lorem ipsum dolor sit amet.</div>
+			<div class="grid__col grid__col_4">Lorem ipsum dolor sit amet.</div>
+		</div>
+		<xmp><div class="grid">
+	<div class="grid__col grid__col_3">...</div>
+	<div class="grid__col grid__col_3">...</div>
+	<div class="grid__col grid__col_3">...</div>
+	<div class="grid__col grid__col_3">...</div>
+	<div class="grid__delimiter"></div>
+	<div class="grid__col grid__col_4">...</div>
+	<div class="grid__col grid__col_4">...</div>
+	<div class="grid__col grid__col_4">...</div>
+</div></xmp>
+		<h1>Setting one column width</h1>
+		<p>Auto-layout for flexbox grid columns also means you can set the width of one column and have the sibling columns automatically resize around it. You may use predefined grid classes (as shown below), grid mixins, or inline widths. Note that the other columns will resize no matter the width of the center column.</p>
+		<div class="grid example">
+			<div class="grid__col">1 of 3</div>
+			<div class="grid__col grid__col_6">2 of 3 (wider)</div>
+			<div class="grid__col">3 of 3</div>
+		</div>
+		<xmp><div class="grid">
+	<div class="grid__col">...</div>
+	<div class="grid__col grid__col_6">...</div>
+	<div class="grid__col">...</div>
+</div></xmp>
+		<h1>Fixed column width</h1>
+		<p>For grids that are the same from the smallest of devices to the largest, use the .col and .col-* classes. Specify a numbered class when you need a particularly sized column; otherwise, feel free to stick to .col.</p>
+		<div class="grid example">
+			<div class="grid__col grid__col_1">1 of 12</div>
+			<div class="grid__col grid__col_3">3 of 12</div>
+			<div class="grid__col grid__col_5">5 of 12</div>
+			<div class="grid__col grid__col_3">3 of 12</div>
+		</div>
+		<xmp><div class="grid">
+	<div class="grid__col grid__col_1">...</div>
+	<div class="grid__col grid__col_3">...</div>
+	<div class="grid__col grid__col_5">...</div>
+	<div class="grid__col grid__col_3">...</div>
+</div></xmp>
+	</section>
+	<footer class="page__footer footer">
+		<nav class="footer__nav nav nav_theme_footer">
+			<a href="javascript:void(0);" class="nav__link">Link1</a>
+			<a href="javascript:void(0);" class="nav__link">Link2</a>
+			<a href="javascript:void(0);" class="nav__link">Link3</a>
+			<a href="javascript:void(0);" class="nav__link">Link4</a>
+			<a href="javascript:void(0);" class="nav__link">Link5</a>
+		</nav>
+	</footer>
+</body>
+</html>

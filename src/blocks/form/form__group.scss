@@ -1,0 +1,7 @@
+@import "vars";
+
+.form__group {
+	& + &:not(:first-child) {
+		margin-top: 16px;
+	}
+}

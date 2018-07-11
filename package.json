@@ -4,7 +4,8 @@
   "description": "BEM example project",
   "main": "gulpfile.js",
   "scripts": {
-    "bundle:scss": "gulp bundle:scss"
+    "bundle:scss": "gulp bundle:scss",
+    "bundle:js": "gulp bundle:js"
   },
   "repository": {
     "type": "git",
@@ -18,6 +19,7 @@
   "author": "Yury Kopyl <yury.kopyl@gmail.com> (https://github.com/yury-kopyl)",
   "license": "MIT",
   "dependencies": {
+    "@bemtools/gulp-bundle-js": "^1.0.0",
     "@bemtools/gulp-bundle-scss": "^1.0.0",
     "@bemtools/gulp-extract-html-class": "^1.0.2",
     "gulp": "^3.9.1"

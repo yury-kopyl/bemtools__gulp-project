@@ -1,0 +1,29 @@
+@mixin media-breakpoint-up($width) {
+	@if $width {
+		@media (min-width: $width#{px}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($width) {
+	@if $width {
+		@media (max-width: $width#{px}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-between($widthFrom, $widthTo) {
+	@if $widthFrom AND $widthTo {
+		@media (min-width: $widthFrom#{px}) and (max-width: $widthTo#{px}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}

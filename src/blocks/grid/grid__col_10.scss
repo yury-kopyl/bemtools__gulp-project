@@ -1,0 +1,5 @@
+@import "vars";
+@import "../_mixins/grid";
+$col-number: 10;
+
+@include make_col($col-number);

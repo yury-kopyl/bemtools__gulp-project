@@ -1,0 +1,50 @@
+@import "vars";
+@import "../_mixins/buttons";
+
+.btn {
+	@include button-theme-variant('default');
+
+	font-family: $font-family;
+	font-size: $font-size;
+	line-height: $line-height;
+	padding: $p-top $p-right $p-bot $p-left;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+
+	@at-root button#{&} {
+		border: none;
+		cursor: pointer;
+
+		/* fix focus on Chrome */
+		&:focus {
+			outline: -webkit-focus-ring-color auto 0;
+		}
+	}
+
+	@at-root a#{&} {
+		display: inline-block;
+		text-decoration: none;
+		text-align: center;
+		/* Turn off dragging links */
+		-webkit-user-drag: none;
+
+		&:disabled,
+		&.btn_disabled {
+			pointer-events: visible;
+		}
+	}
+
+	@at-root label#{&} {
+		display: inline-block;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	&:disabled,
+	&.btn_disabled {
+		cursor: not-allowed;
+	}
+}

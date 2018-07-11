@@ -1,0 +1,22 @@
+@import "vars";
+
+.input {
+	box-sizing: border-box;
+	font-size: $font-size;
+	line-height: $line-height;
+	padding-top: $p-top;
+	padding-right: $p-right;
+	padding-bottom: $p-bottom;
+	padding-left: $p-left;
+	color: $color;
+	border: $border;
+	border-radius: $border-radius;
+
+	&::placeholder {
+		color: $color-pholder;
+	}
+
+	&:focus {
+		border-color: $border_focus;
+	}
+}
