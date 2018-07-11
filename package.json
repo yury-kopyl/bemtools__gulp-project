@@ -1,0 +1,25 @@
+{
+  "name": "@bemtools/gulp-project",
+  "version": "1.0.0",
+  "description": "BEM example project",
+  "main": "gulpfile.js",
+  "scripts": {
+    "bundle:scss": "gulp bundle:scss"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yury-kopyl/bemtools__gulp-project"
+  },
+  "keywords": [
+    "bem",
+    "bem project",
+    "bem example"
+  ],
+  "author": "Yury Kopyl <yury.kopyl@gmail.com> (https://github.com/yury-kopyl)",
+  "license": "MIT",
+  "dependencies": {
+    "@bemtools/gulp-bundle-scss": "^1.0.0",
+    "@bemtools/gulp-extract-html-class": "^1.0.2",
+    "gulp": "^3.9.1"
+  }
+}
