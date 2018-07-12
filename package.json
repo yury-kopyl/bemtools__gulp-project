@@ -1,27 +1,47 @@
 {
-  "name": "@bemtools/gulp-project",
-  "version": "1.0.0",
-  "description": "BEM example project",
-  "main": "gulpfile.js",
-  "scripts": {
-    "bundle:scss": "gulp bundle:scss",
-    "bundle:js": "gulp bundle:js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/yury-kopyl/bemtools__gulp-project"
-  },
-  "keywords": [
-    "bem",
-    "bem project",
-    "bem example"
-  ],
-  "author": "Yury Kopyl <yury.kopyl@gmail.com> (https://github.com/yury-kopyl)",
-  "license": "MIT",
-  "dependencies": {
-    "@bemtools/gulp-bundle-js": "^1.0.0",
-    "@bemtools/gulp-bundle-scss": "^1.0.0",
-    "@bemtools/gulp-extract-html-class": "^1.0.2",
-    "gulp": "^3.9.1"
-  }
+	"name": "@bemtools/gulp-project",
+	"version": "1.0.0",
+	"description": "BEM example project",
+	"main": "gulpfile.js",
+	"scripts": {
+		"styles : dist": "gulp styles:dist",
+		"styles : watch": "gulp styles:watch",
+		"styles : bundle": "gulp styles:bundle",
+		"styles : build": "gulp styles:build",
+		"styles : watch : bundle": "gulp styles:watch:bundle",
+		"styles : watch : build": "gulp styles:watch:build",
+		"scripts : dist": "gulp scripts:dist",
+		"scripts : watch": "gulp scripts:watch",
+		"scripts : bundle": "gulp scripts:bundle",
+		"scripts : build": "gulp scripts:build",
+		"scripts : watch : bundle": "gulp scripts:watch:bundle",
+		"scripts : watch : build": "gulp scripts:watch:build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/yury-kopyl/bemtools__gulp-project"
+	},
+	"keywords": [
+		"bem",
+		"bem project",
+		"bem example"
+	],
+	"author": "Yury Kopyl <yury.kopyl@gmail.com> (https://github.com/yury-kopyl)",
+	"license": "MIT",
+	"dependencies": {
+		"@bemtools/gulp-bundle-js": "^1.0.0",
+		"@bemtools/gulp-bundle-scss": "^1.0.0",
+		"@bemtools/gulp-extract-html-class": "^1.0.2",
+		"babel-core": "^6.26.3",
+		"babel-preset-env": "^1.7.0",
+		"babelify": "^8.0.0",
+		"gulp": "^3.9.1",
+		"gulp-browserify": "^0.5.1",
+		"gulp-clean-css": "^3.9.4",
+		"gulp-csscomb": "^3.0.8",
+		"gulp-rename": "^1.3.0",
+		"gulp-sass": "^4.0.1",
+		"gulp-watch": "^5.0.0",
+		"run-sequence": "^2.2.1"
+	}
 }
