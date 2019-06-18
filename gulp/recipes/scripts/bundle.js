@@ -1,10 +1,15 @@
-const gulp         = require('gulp');
-const extractClass = require('@bemtools/gulp-extract-html-class');
-const bundleJS     = require('@bemtools/gulp-bundle-js');
+import bundleJS from '@bemtools/gulp-bundle-js';
+import extractClass from '@bemtools/gulp-extract-html-class';
+import { src, dest } from 'gulp';
 
-module.exports = () => {
-	return gulp.src('./src/html/**/*.html')
+/**
+ *
+ * @param {Config} cfg
+ * @returns {*}
+ */
+export function bundle(cfg) {
+	return src(`${cfg.src.html}/**/*.html`)
 		.pipe(extractClass())
 		.pipe(bundleJS())
-		.pipe(gulp.dest('./src/bundles'));
-};
+		.pipe(dest(`${cfg.src.base}/${cfg.src.bundles}`));
+}

@@ -12,6 +12,7 @@ class Btn {
 	init() {
 		this.addEventListener();
 		this.buttons.forEach(button => {
+			console.log(1);
 			button.classList.remove(`.${classList.INIT_CLASS}`);
 		});
 	}

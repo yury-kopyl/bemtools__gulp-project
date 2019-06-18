@@ -1,0 +1,15 @@
+{
+  "src": {
+    "base": "src",
+    "bundles": "bundles",
+    "js": "js",
+    "css": "css",
+    "html": "src/html"
+  },
+  "dest": {
+    "dev": "dist/dev",
+    "prod": "dist/prod",
+    "js": "js",
+    "css": "css"
+  }
+}
