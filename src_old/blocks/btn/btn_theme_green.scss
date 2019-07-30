@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+
+.btn_theme_green {
+	&:not(.btn_shrine):not(.btn_shadow) {
+		@include button-theme-variant('green');
+	}
+
+	&.btn_shrine.btn_shadow {
+		background-color: transparent;
+
+		span {
+			@include button-theme-variant('green');
+		}
+	}
+}

@@ -1,8 +1,0 @@
-@import  "../grid/vars";
-
-@mixin make_col($i) {
-	.grid__col_#{$i} {
-		flex: 0 0 percentage($i / $columns);
-		max-width: percentage($i / $columns);
-	}
-}

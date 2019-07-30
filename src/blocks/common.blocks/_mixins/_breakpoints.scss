@@ -1,0 +1,60 @@
+@import "../../variables";
+
+@function breakpoint-next($name, $breakpoints: $breakpoints, $breakpoint-names: map-keys($breakpoints)) {
+	$n: index($breakpoint-names, $name);
+
+	@if not $n {
+		@error "breakpoint `#{$name}` not found in `#{$breakpoints}`";
+	}
+
+	@return if($n < length($breakpoint-names), nth($breakpoint-names, $n + 1), null);
+}
+
+@mixin media-breakpoint-up($width) {
+	@if type-of($width) == "string" {
+		$width: map-get($breakpoints, $width);
+
+		@media (min-width: $width#{px}) {
+			@content;
+		}
+	} @else if type-of($width) == "number" {
+		@media (min-width: $width#{px}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-down($width) {
+	@if type-of($width) == "string" {
+		$width: map-get($breakpoints, breakpoint-next($width)) - 0.2;
+
+		@media (max-width: $width#{px}) {
+			@content;
+		}
+	} @else if type-of($width) == "number" {
+		@media (max-width: $width#{px}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}
+
+@mixin media-breakpoint-between($widthFrom, $widthTo) {
+	@if type-of($widthFrom) == "string" AND type-of($widthTo) == "string" {
+		$min: map-get($breakpoints, $widthFrom);
+		$max: map-get($breakpoints, breakpoint-next($widthTo)) - 0.2;
+
+		@media (min-width: $min#{px}) and (max-width: $max#{px}) {
+			@content;
+		}
+	} @else if type-of($widthFrom) == "number" AND type-of($widthTo) == "number" {
+		@media (min-width: $widthFrom#{px}) and (max-width: $widthTo#{px}) {
+			@content;
+		}
+	} @else {
+		@content;
+	}
+}

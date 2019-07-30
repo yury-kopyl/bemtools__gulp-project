@@ -1,0 +1,16 @@
+@import "../../variables";
+@import "../../common.blocks/_mixins/breakpoints";
+
+.container {
+    @include media-breakpoint-between(md, lg) {
+        max-width: #{map-get($containers, lg)}px;
+    }
+
+    @include media-breakpoint-between(sm, md) {
+        max-width: #{map-get($containers, md)}px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        max-width: #{map-get($containers, sm)}px;
+    }
+}

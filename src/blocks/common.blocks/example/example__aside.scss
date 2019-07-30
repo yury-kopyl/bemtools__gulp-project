@@ -1,0 +1,51 @@
+.example__aside {
+  height: 100vh;
+  //width: calc(256px + var(--shadow-depth));
+  width: 256px;
+  //transform: translate(calc(-100% + var(--shadow-depth)), 0);
+  transform: translate(-100%, 0);
+  transition: transform .3s ease-out 0s;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  //box-shadow: 0 0 11px 5px black;
+
+  &:hover {
+    //box-shadow: none;
+    transform: translate(0, 0);
+
+    /*&:before {
+      visibility: visible;
+      opacity: 1;
+    }*/
+  }
+
+  &:before{
+    content: "";
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    position: absolute;
+    top: calc(50% - 25px);
+    transform: rotate(45deg);
+    right: -25px;
+    z-index: 1;
+    border: 1px solid gray;
+    //box-shadow: 0 0 var(--shadow-depth) black;
+    //opacity: 0;
+    //visibility: hidden;
+    //transition: opacity .3s ease-out 0s;
+  }
+
+  /*&:after {
+    content: "";
+    width: 16px;
+    height: calc(50% - 50px);
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 var(--shadow-depth) black;
+    z-index: -1;
+  }*/
+}

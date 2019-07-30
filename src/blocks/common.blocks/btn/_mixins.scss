@@ -1,0 +1,5 @@
+@import  "../btn/variables";
+
+@mixin btn_disabled {
+	cursor: not-allowed;
+}

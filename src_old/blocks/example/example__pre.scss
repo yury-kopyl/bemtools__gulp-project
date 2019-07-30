@@ -1,0 +1,9 @@
+.example__pre {
+  font-family: "Source Code Pro", sans-serif;
+  padding: 8px;
+  background-color: var(--color-p-50);
+  width: max-content;
+  cursor: pointer;
+  user-select: none;
+  -moz-user-select: none;
+}

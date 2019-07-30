@@ -1,0 +1,9 @@
+@import "variables";
+
+.table {
+	border-collapse: collapse;
+
+	&, & * {
+		box-sizing: border-box;
+	}
+}

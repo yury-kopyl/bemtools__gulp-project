@@ -1,0 +1,4 @@
+{
+	"INIT_CLASS":	"lazy-load-js",
+	"HIDDEN_CLASS": "lazy-load_hidden"
+}

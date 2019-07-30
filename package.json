@@ -5,10 +5,12 @@
 	"main": "gulpfile.js",
 	"scripts": {
 		"dist": "gulp dist --gulpfile gulpfile.babel.js",
+		"dist --debug": "gulp dist --gulpfile gulpfile.babel.js --env debug",
 		"dist --prod": "gulp dist --gulpfile gulpfile.babel.js --env production",
 		"scripts : dist": "gulp scripts:dist --gulpfile gulpfile.babel.js",
 		"styles : dist": "gulp styles:dist --gulpfile gulpfile.babel.js",
-		"watch": "gulp watch --gulpfile gulpfile.babel.js"
+		"html : build": "gulp html:build --gulpfile gulpfile.babel.js",
+		"serve": "gulp serve --gulpfile gulpfile.babel.js"
 	},
 	"repository": {
 		"type": "git",
@@ -22,23 +24,35 @@
 	"author": "Yury Kopyl <yury.kopyl@gmail.com> (https://github.com/yury-kopyl)",
 	"license": "MIT",
 	"dependencies": {
-		"@babel/core": "^7.4.5",
 		"@bemtools/gulp-bundle-js": "^1.0.0",
-		"@bemtools/gulp-bundle-scss": "^1.0.0",
+		"@bemtools/gulp-bundle-scss": "^1.0.2",
 		"@bemtools/gulp-extract-html-class": "^1.0.2",
-		"babel-core": "^6.26.3",
-		"babel-preset-env": "^1.7.0",
+		"browser-sync": "^2.26.7",
 		"browserify": "^16.2.3",
 		"gulp": "^4.0.2",
-		"gulp-babel": "^8.0.0",
+		"gulp-browserify": "^0.5.1",
+		"gulp-buffer": "0.0.2",
 		"gulp-changed": "^4.0.0",
 		"gulp-clean-css": "^4.2.0",
 		"gulp-csscomb": "^3.0.8",
+		"gulp-htmlmin": "^5.0.1",
 		"gulp-if": "^2.0.2",
+		"gulp-include-html": "^1.0.14",
+		"gulp-minify-cssnames": "^2.1.0",
 		"gulp-rename": "^1.4.0",
 		"gulp-sass": "^4.0.2",
+		"gulp-sourcemaps": "^2.6.5",
+		"gulp-tap": "^1.0.1",
 		"gulp-uglify": "^3.0.2",
+		"gulp-watch": "^5.0.1",
 		"merge-stream": "^2.0.0",
-		"minimist": "^1.2.0"
+		"minimist": "^1.2.0",
+		"vinyl": "^2.2.0"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.5.0",
+		"@babel/preset-env": "^7.5.0",
+		"@babel/register": "^7.4.4",
+		"babelify": "^10.0.0"
 	}
 }

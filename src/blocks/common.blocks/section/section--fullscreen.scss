@@ -1,0 +1,9 @@
+.section--fullscreen {
+    height: 100vh;
+    background: url("../assets/img/map.webp") no-repeat calc(50% + 490px) center;
+
+    .section__container {
+        height: 100vh;
+        background: url("../assets/img/section__fullscreen-child-bg.webp") no-repeat right center;
+    }
+}

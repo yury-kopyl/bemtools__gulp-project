@@ -1,0 +1,7 @@
+@function transform-to-int ($num) {
+  @return $num / ($num * 0 + 1);
+}
+
+@function rem ($pixels) {
+  @return transform-to-int($pixels) / $base-rem * 1rem;
+}

@@ -1,0 +1,5 @@
+@import "mixins";
+
+.btn_disabled {
+	@include btn_disabled;
+}

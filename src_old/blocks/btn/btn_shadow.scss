@@ -1,0 +1,37 @@
+@import "variables";
+
+.btn_shadow {
+	&:not(.btn_shrine) {
+		box-shadow: $box-shadow;
+
+		&:hover {
+			box-shadow: none;
+		}
+
+		&:active {
+			box-shadow: none;
+		}
+
+		&:disabled,
+		&.btn_disabled {
+			box-shadow: none;
+		}
+	}
+
+	&.btn_shrine {
+		filter: drop-shadow($box-shadow);
+
+		&:hover {
+			filter: none;
+		}
+
+		&:active {
+			filter: none;
+		}
+
+		&:disabled,
+		&.btn_disabled {
+			filter: none;
+		}
+	}
+}

@@ -1,6 +1,0 @@
-@import "vars";
-@import "../_mixins/buttons";
-
-.btn_theme_orange {
-	@include button-theme-variant('orange');
-}

@@ -2,13 +2,13 @@
   "src": {
     "base": "src",
     "bundles": "bundles",
+    "blocks": "blocks",
     "js": "js",
     "css": "css",
-    "html": "src/html"
+    "html": "templates"
   },
   "dest": {
-    "dev": "dist/dev",
-    "prod": "dist/prod",
+    "base": "dist",
     "js": "js",
     "css": "css"
   }

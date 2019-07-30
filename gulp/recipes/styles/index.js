@@ -1,2 +1,2 @@
 export * from './build';
-export * from './bundle';
+export * from './minify-css-names';

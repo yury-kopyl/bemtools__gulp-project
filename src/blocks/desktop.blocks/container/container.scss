@@ -1,0 +1,5 @@
+@import "../../variables";
+
+.container {
+    max-width: #{map-get($containers, xl)}px;
+}

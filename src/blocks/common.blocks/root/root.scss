@@ -1,0 +1,23 @@
+@import "../../variables";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500|Source+Code+Pro&display=swap&subset=cyrillic');
+
+:root {
+  --color-primary:  #1373e5;
+  --color-primary-h:  #388cf0;
+
+  --color-black: #0f1011;
+
+  --color-gray-overlay: #616161e6;
+  --font-family: "Roboto", sans-serif;
+
+  --gutter: 15px;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--font-family);
+}

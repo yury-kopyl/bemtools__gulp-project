@@ -1,0 +1,45 @@
+@import "variables";
+@import "mixins";
+
+.btn {
+    font-family: var(--font-family);
+    font-weight: 600;
+    line-height: 24px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 14px;
+    padding: 12px 26px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--color-black);
+
+    &:focus {
+        outline: -webkit-focus-ring-color auto 0;
+    }
+
+    @at-root a#{&} {
+        display: inline-block;
+        text-decoration: none;
+        text-align: center;
+        /* Turn off dragging links */
+        -webkit-user-drag: none;
+
+        &:disabled,
+        &.btn_disabled {
+            pointer-events: visible;
+        }
+    }
+
+    @at-root label#{&} {
+        display: inline-block;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    &:disabled {
+        @include btn_disabled;
+    }
+}

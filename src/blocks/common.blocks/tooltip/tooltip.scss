@@ -1,0 +1,48 @@
+@import "../_mixins/breakpoints";
+
+.tooltip {
+  --bottom: 100%;
+  --left: 50%;
+  --right: auto;
+  --top: auto;
+  --translate-after: translate(-50%, -8px);
+
+  &:after {
+    background-color: var(--color-gray-overlay);
+    bottom: var(--bottom);
+    border-radius: 4px;
+    color: #fff;
+    content: attr(data-title);
+    display: none;
+    left: var(--left);
+    pointer-events: none;
+    position: absolute;
+    right: var(--right);
+    top: var(--top);
+    transform: var(--translate-after);
+    white-space: nowrap;
+    font-family: "Roboto", sans-serif;
+
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      line-height: 32px;
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 10px;
+      line-height: 24px;
+      padding-left: 8px;
+      padding-right: 8px;
+    }
+  }
+
+  &:hover {
+    position: relative;
+
+    &:after {
+      display: inherit;
+    }
+  }
+}

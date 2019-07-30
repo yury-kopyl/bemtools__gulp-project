@@ -1,0 +1,11 @@
+@import "../../common.blocks/_mixins/breakpoints";
+
+.logo__icon {
+    @include media-breakpoint-between(sm, lg) {
+        width: 37px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 30px;
+    }
+}

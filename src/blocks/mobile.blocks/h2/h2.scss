@@ -1,0 +1,13 @@
+@import "../../common.blocks/_mixins/breakpoints";
+
+.h2 {
+    @include media-breakpoint-between(md, lg) {
+        font-size: var(--size-md);
+        line-height: var(--line);
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: var(--size-sm);
+        line-height: var(--line-sm);
+    }
+}

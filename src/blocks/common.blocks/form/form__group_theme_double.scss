@@ -1,0 +1,23 @@
+@import "variables";
+@import "../_mixins/breakpoints";
+
+.form__group_theme_double {
+	display: flex;
+	justify-content: end;
+
+	.form__btn {
+		&:first-child {
+			margin-right: 8px;
+		}
+
+		&:last-child {
+			margin-left: 8px;
+		}
+	}
+
+	@include media-breakpoint-between(320, 500) {
+		.form__btn {
+			width: 50%;
+		}
+	}
+}

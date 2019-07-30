@@ -1,0 +1,39 @@
+@import "../variables";
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Source+Code+Pro&display=swap&subset=cyrillic');
+
+:root {
+  --color-p-50:  #e4f1fc;
+  --color-p-100: #bddcf8;
+  --color-p-200: #94c6f3;
+  --color-p-300: #6db0ed;
+  --color-p-400: #52a0ea;
+  --color-p-500: #3e90e6;
+  --color-p-600: #3a82d8;
+  --color-p-700: #3471c5;
+  --color-p-800: #2e60b3;
+  --color-p-900: #254393;
+  --color-p:  var(--color-p-500);
+
+  --color-s-50:  #fdf3e4;
+  --color-s-100: #fae1ba;
+  --color-s-200: #f7cd8f;
+  --color-s-300: #f4b965;
+  --color-s-400: #f2ab4b;
+  --color-s-500: #ef9e3d;
+  --color-s-600: #ea9339;
+  --color-s-700: #e38535;
+  --color-s-800: #dc7731;
+  --color-s-900: #cf632d;
+  --color-s: var(--color-s-500);
+
+  --color-gray-overlay: #616161e6;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Roboto", sans-serif;
+}

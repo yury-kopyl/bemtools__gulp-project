@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "@bemtools/gulp-bundle-scss@1.0.0",
+      "C:\\Projects\\bemtools__gulp-project"
+    ]
+  ],
+  "_from": "@bemtools/gulp-bundle-scss@1.0.0",
+  "_id": "@bemtools/gulp-bundle-scss@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-wAP2oEdDg8bk4A2Uw9LoH5roGltVOLMuaX7v6mSBab2QlVD0cq9ZYk725bcrEBZv6rtcuSNqqgLLz1f/ZXpQ2Q==",
+  "_location": "/@bemtools/gulp-bundle-scss",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@bemtools/gulp-bundle-scss@1.0.0",
+    "name": "@bemtools/gulp-bundle-scss",
+    "escapedName": "@bemtools%2fgulp-bundle-scss",
+    "scope": "@bemtools",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@bemtools/gulp-bundle-scss/-/gulp-bundle-scss-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "C:\\Projects\\bemtools__gulp-project",
+  "author": {
+    "name": "Yury Kopyl",
+    "email": "yury.kopyl@gmail.com",
+    "url": "https://github.com/yury-kopyl"
+  },
+  "bugs": {
+    "url": "https://github.com/yury-kopyl/bemtools__gulp-bundle-scss/issues"
+  },
+  "dependencies": {
+    "through2": "^2.0.3"
+  },
+  "description": "Create bundle scss file and import in all blocks",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^5.2.0"
+  },
+  "homepage": "https://github.com/yury-kopyl/bemtools__gulp-bundle-scss#readme",
+  "keywords": [
+    "bem",
+    "bundle scss",
+    "include scss"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@bemtools/gulp-bundle-scss",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yury-kopyl/bemtools__gulp-bundle-scss.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.0.0"
+}

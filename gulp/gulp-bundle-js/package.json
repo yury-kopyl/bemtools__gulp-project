@@ -1,0 +1,66 @@
+{
+  "_args": [
+    [
+      "@bemtools/gulp-bundle-js@1.0.0",
+      "C:\\Projects\\bemtools__gulp-project"
+    ]
+  ],
+  "_from": "@bemtools/gulp-bundle-js@1.0.0",
+  "_id": "@bemtools/gulp-bundle-js@1.0.0",
+  "_inBundle": false,
+  "_integrity": "sha512-+BoMchxwo0ffWLIu0E3q1QxXXmSi3Ii14H/tpP+w5Q9dxWC4DPvjKHj7MkPZjKSvL8/9Dz6IQYHiEsV2iwwxwg==",
+  "_location": "/@bemtools/gulp-bundle-js",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@bemtools/gulp-bundle-js@1.0.0",
+    "name": "@bemtools/gulp-bundle-js",
+    "escapedName": "@bemtools%2fgulp-bundle-js",
+    "scope": "@bemtools",
+    "rawSpec": "1.0.0",
+    "saveSpec": null,
+    "fetchSpec": "1.0.0"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@bemtools/gulp-bundle-js/-/gulp-bundle-js-1.0.0.tgz",
+  "_spec": "1.0.0",
+  "_where": "C:\\Projects\\bemtools__gulp-project",
+  "author": {
+    "name": "Yury Kopyl",
+    "email": "yury.kopyl@gmail.com",
+    "url": "https://github.com/yury-kopyl"
+  },
+  "bugs": {
+    "url": "https://github.com/yury-kopyl/bemtools__gulp-bundle-js/issues"
+  },
+  "dependencies": {
+    "through2": "^2.0.3"
+  },
+  "description": "Create bundle js file and import in all blocks",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^5.2.0"
+  },
+  "homepage": "https://github.com/yury-kopyl/bemtools__gulp-bundle-js#readme",
+  "keywords": [
+    "bem",
+    "bundle js",
+    "bem bundle js",
+    "import js",
+    "bem import js"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@bemtools/gulp-bundle-js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yury-kopyl/bemtools__gulp-bundle-js.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.0.0"
+}

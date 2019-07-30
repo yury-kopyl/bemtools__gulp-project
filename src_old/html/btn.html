@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" class="root normalize">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="css/btn<%= min%>.css?v=<%= version%>">
+</head>
+<body class="example example-js">
+
+<div class="example__aside">
+    @@include('./_nav.html')
+</div>
+
+<section class="example__content">
+    <h1>Themes</h1>
+
+    <button class="btn" type="button">Default</button>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;button class="btn" type="button"&gt;Default&lt;/button&gt;</pre>
+
+    <button class="btn btn_theme_green" type="button">Theme green</button>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;button class="btn btn_theme_green" type="button"&gt;Theme green&lt;/button&gt;</pre>
+
+    <button class="btn btn_theme_orange" type="button">Theme orange</button>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;button class="btn btn_theme_orange" type="button"&gt;Theme orange&lt;/button&gt;</pre>
+
+    <button class="btn btn_theme_green btn_shrine" type="button">Theme shrine</button>
+
+    <button class="btn btn_theme_green btn_shrine btn_shadow" type="button">
+        <span>Theme shrine</span>
+    </button>
+
+    <h1>Size</h1>
+
+    <button class="btn" type="button">Normal size</button>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;button class="btn" type="button"&gt;Normal size&lt;/button&gt;</pre>
+
+    <button class="btn btn_size_lg" type="button">Large size</button>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;button class="btn btn_size_lg" type="button"&gt;Large size&lt;/button&gt;</pre>
+
+    <button class="btn" type="button">Lorem ipsum.</button>
+    <a class="btn" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_size_lg" type="button">Lorem ipsum.</button>
+    <a class="btn btn_size_lg" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn" type="button" disabled>Lorem ipsum.</button>
+    <a class="btn btn_disabled" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_size_lg" type="button" disabled>Lorem ipsum.</button>
+    <a class="btn btn_size_lg btn_disabled" href="javascript:void(0);">Lorem ipsum.</a>
+    <hr>
+    <button class="btn btn_theme_orange" type="button">Lorem ipsum.</button>
+    <a class="btn btn_theme_orange" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_theme_orange btn_size_lg" type="button">Lorem ipsum.</button>
+    <a class="btn btn_theme_orange btn_size_lg" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_theme_orange" type="button" disabled>Lorem ipsum.</button>
+    <a class="btn btn_theme_orange btn_disabled" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_theme_orange btn_size_lg" type="button" disabled>Lorem ipsum.</button>
+    <a class="btn btn_theme_orange btn_size_lg btn_disabled" href="javascript:void(0);">Lorem ipsum.</a>
+    <hr>
+    <button class="btn btn_theme_green" type="button">Lorem ipsum.</button>
+    <a class="btn btn_theme_green" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_theme_green btn_size_lg" type="button">Lorem ipsum.</button>
+    <a class="btn btn_theme_green btn_size_lg" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_theme_green" type="button" disabled>Lorem ipsum.</button>
+    <a class="btn btn_theme_green btn_disabled" href="javascript:void(0);">Lorem ipsum.</a>
+    <button class="btn btn_theme_green btn_size_lg" type="button" disabled>Lorem ipsum.</button>
+    <a class="btn btn_theme_green btn_size_lg btn_disabled btn-js" href="javascript:void(0);">Lorem ipsum.</a>
+    <hr>
+    <label class="btn btn_theme_green" for="modal">Open modal</label>
+    <hr>
+    <div class="modal">
+        <input class="modal__control" id="modal" type="checkbox" autocomplete="off">
+        <label class="modal__overlay" for="modal"></label>
+        <form class="modal__window">
+            <div class="modal__header">New Password</div>
+            <div class="form">
+                <div class="form__group">
+                    <label for="currentPassword" class="label form__label">Current password</label>
+                    <input class="input form__control" id="currentPassword" type="password"
+                           name="currentPassword" placeholder="Enter password">
+                </div>
+                <div class="form__group">
+                    <label for="newPassword" class="label form__label">Current password</label>
+                    <input class="input form__control" id="newPassword" type="password" name="newPassword"
+                           placeholder="Enter password">
+                </div>
+                <div class="form__group">
+                    <label for="rePassword" class="label form__label">Re-enter new password</label>
+                    <input class="input form__control" id="rePassword" type="password" name="rePassword"
+                           placeholder="Enter password">
+                </div>
+                <div class="form__group form__group_theme_double">
+                    <button class="form__btn btn btn_uppercase btn_shadow" type="reset">Reset</button>
+                    <button class="form__btn btn btn_uppercase btn_theme_green btn_shadow" type="submit">
+                        Submit
+                    </button>
+                </div>
+                <div class="form__group form__group_theme_triple">
+                    <a href="#close-form"
+                       class="form__btn btn btn_uppercase btn_theme_orange btn_shadow">Cancel</a>
+                    <button class="form__btn btn btn_uppercase btn_shadow" type="reset">Reset</button>
+                    <button class="form__btn btn btn_uppercase btn_theme_green btn_shadow" type="submit">
+                        Submit
+                    </button>
+                </div>
+            </div>
+            <label class="modal__close" for="modal">×</label>
+        </form>
+    </div>
+    <hr>
+</section>
+
+<script src="js/btn<%= min%>.js?v=<%= version%>"></script>
+</body>
+</html>

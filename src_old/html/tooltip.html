@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" class="root normalize">
+<head>
+    <meta charset="UTF-8">
+    <title>Buttons</title>
+    <link rel="stylesheet" href="css/tooltip<%= min%>.css?v=<%= version%>">
+</head>
+<body class="example example-js">
+
+<div class="example__aside">
+    @@include('./_nav.html')
+</div>
+
+<section class="example__content">
+    <a class="tooltip" href="#" data-title="This is top tooltip">Top tooltip</a>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;a class="tooltip" href="#" data-title="This is top tooltip"&gt;Top tooltip&lt;/a&gt;</pre>
+    <a class="tooltip tooltip_direction_bottom" href="#" data-title="This is bottom tooltip">Bottom tooltip</a>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;a class="tooltip tooltip_direction_bottom" href="#" data-title="This is bottom tooltip"&gt;Bottom tooltip&lt;/a&gt;</pre>
+    <a class="tooltip tooltip_direction_left" href="#" data-title="This is left tooltip">Left tooltip</a>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;a class="tooltip tooltip_direction_left" href="#" data-title="This is left tooltip"&gt;Left tooltip&lt;/a&gt;</pre>
+    <a class="tooltip tooltip_direction_right" href="#" data-title="This is right tooltip">Right tooltip</a>
+    <pre class="example__pre tooltip" data-title="Click to copy">&lt;a class="tooltip tooltip_direction_right" href="#" data-title="This is right tooltip"&gt;Right tooltip&lt;/a&gt;</pre>
+</section>
+
+<script src="js/tooltip<%= min%>.js?v=<%= version%>"></script>
+</body>
+</html>

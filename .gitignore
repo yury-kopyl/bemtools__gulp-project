@@ -1,2 +1,5 @@
-node_modules/
+.bemsk/
 .idea/
+dist/
+node_modules/
+src/bundles/

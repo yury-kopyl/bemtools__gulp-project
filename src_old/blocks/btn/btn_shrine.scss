@@ -1,0 +1,28 @@
+@import "variables";
+
+.btn_shrine {
+	--shrine-size: 6px;
+
+	&:not(.btn_shadow),
+	&.btn_shadow span {
+		clip-path: polygon(
+										0 var(--shrine-size),
+										var(--shrine-size) 0,
+										calc(100% - var(--shrine-size)) 0,
+										100% var(--shrine-size),
+										100% calc(100% - var(--shrine-size)),
+										calc(100% - var(--shrine-size)) 100%,
+										var(--shrine-size) 100%,
+										0 calc(100% - var(--shrine-size))
+		);
+	}
+
+	&.btn_shadow {
+		padding: 0;
+
+		span {
+			padding: $p-top $p-right $p-bot $p-left;
+			display: inline-block;
+		}
+	}
+}

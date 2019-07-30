@@ -1,0 +1,16 @@
+@import "variables";
+@import "mixins";
+
+.btn--theme-primary {
+    background-color: var(--color-primary);
+    color: #fff;
+    box-shadow: 0 5px 23px rgba(19, 115, 229, .3);
+    border-radius: 40px;
+
+    &:hover,
+    &:focus,
+    &:active {
+        box-shadow: 0 3px 13px rgba(19, 115, 229, .22);
+        background-color: var(--color-primary-h);
+    }
+}

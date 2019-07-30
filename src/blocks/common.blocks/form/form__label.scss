@@ -1,0 +1,9 @@
+@import "variables";
+
+.form__label {
+	vertical-align: top;
+
+	+ .form__control {
+		margin-top: 8px;
+	}
+}

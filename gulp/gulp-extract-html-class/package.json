@@ -1,0 +1,64 @@
+{
+  "_args": [
+    [
+      "@bemtools/gulp-extract-html-class@1.0.2",
+      "C:\\Projects\\bemtools__gulp-project"
+    ]
+  ],
+  "_from": "@bemtools/gulp-extract-html-class@1.0.2",
+  "_id": "@bemtools/gulp-extract-html-class@1.0.2",
+  "_inBundle": false,
+  "_integrity": "sha512-/syE7BH+b6Sc5rYmhIOyIOTDp1smAQUNvXOFXOrRKtvOgMsbTBFI8vJBxHVMTt+SOCFHSRon/BVo7/Iz9c/HUA==",
+  "_location": "/@bemtools/gulp-extract-html-class",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "version",
+    "registry": true,
+    "raw": "@bemtools/gulp-extract-html-class@1.0.2",
+    "name": "@bemtools/gulp-extract-html-class",
+    "escapedName": "@bemtools%2fgulp-extract-html-class",
+    "scope": "@bemtools",
+    "rawSpec": "1.0.2",
+    "saveSpec": null,
+    "fetchSpec": "1.0.2"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@bemtools/gulp-extract-html-class/-/gulp-extract-html-class-1.0.2.tgz",
+  "_spec": "1.0.2",
+  "_where": "C:\\Projects\\bemtools__gulp-project",
+  "author": {
+    "name": "Yury Kopyl",
+    "email": "yury.kopyl@gmail.com",
+    "url": "https://github.com/yury-kopyl"
+  },
+  "bugs": {
+    "url": "https://github.com/yury-kopyl/bemtools__gulp-extract-html-class/issues"
+  },
+  "dependencies": {
+    "through2": "^2.0.3"
+  },
+  "description": "Extracts all classes from the html",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "mocha": "^5.2.0"
+  },
+  "homepage": "https://github.com/yury-kopyl/bemtools__gulp-extract-html-class#readme",
+  "keywords": [
+    "bem",
+    "extract classes",
+    "get classes"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "name": "@bemtools/gulp-extract-html-class",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yury-kopyl/bemtools__gulp-extract-html-class.git"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "version": "1.0.2"
+}
